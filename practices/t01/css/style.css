@@ -1,0 +1,65 @@
+:root {
+    --primary-text-color: white;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto",sans-serif;
+}
+
+#header-img {
+    width: 150px;
+    height: 200px;
+    border: 1px solid white;
+}
+#header-info {
+    color: var(--primary-text-color);
+}
+main {
+    display: flex;
+    padding: 0% 5%;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: #0f56ba;
+    width: 40%;
+    height: 100%;
+}
+header {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0.5em 2em;
+        margin: 0px;
+        
+    }
+    #info-name {
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    header {
+        padding: 2.5em 4em;
+        margin: 0px;
+    }
+}
+@media screen and (min-width: 1024px)  {
+    header {
+        padding: 2.5rem 5%;
+        margin: 0px;
+    }
+    
+    #info-name {
+        font-size: 3em;
+        font-weight: 600;
+    }
+}
