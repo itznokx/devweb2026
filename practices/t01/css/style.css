@@ -6,6 +6,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "Roboto",sans-serif;
+    list-style: none;
 }
 .item-language-div {
     display: flex;
@@ -31,6 +32,7 @@ aside {
     background-color: #0f56ba;
     width: 45%;
     height: 100%;
+    color: var(--primary-text-color);
 }
 #main-section-div {
     background-color: lightgray;
@@ -42,7 +44,44 @@ header {
     flex-direction: row;
     gap: 15px;
 }
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-text-color);
+    padding: 30px 10px;
+}
+footer hr {
+    width: 90%;
+}
+.contact-icon {
+    width: 32px;
+    height: 32px;
+}
+.aside-contact-social-div {
+    display: flex;
+    gap: 10px;
+}
+.main-general-title {
+    background-color: darkgray;
+}
+.aside-general-title {
+    background-color: #0a3a7d;
+}
+a {
+    color: var(--primary-text-color);
+}
+a:visited {
+    color: var(--primary-text-color);
 
+}
+#up-div-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
 @media screen and (max-width: 767px) {
     header {
         padding: 0.5em 2em;
@@ -89,9 +128,19 @@ header {
         padding: 2.5rem 5%;
         margin: 0px;
     }
-    
+    aside { 
+        width: 45%;
+        padding: 10px 20px;
+    }
+    #main-section-div {
+        width: 45%;
+        padding: 10px 20px;
+    }
     #info-name {
         font-size: 3em;
         font-weight: 600;
+    }
+    hr {
+        width: 90%;
     }
 }
