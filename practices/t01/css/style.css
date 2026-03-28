@@ -6,8 +6,14 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "Roboto",sans-serif;
+    list-style: none;
 }
-
+.item-language-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
 #header-img {
     width: 150px;
     height: 200px;
@@ -24,8 +30,12 @@ aside {
     display: flex;
     flex-direction: column;
     background-color: #0f56ba;
-    width: 40%;
+    width: 45%;
     height: 100%;
+    color: var(--primary-text-color);
+}
+#main-section-div {
+    background-color: lightgray;
 }
 header {
     align-items: center;
@@ -34,8 +44,45 @@ header {
     flex-direction: row;
     gap: 15px;
 }
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-text-color);
+    padding: 30px 10px;
+}
+footer hr {
+    width: 90%;
+}
+.contact-icon {
+    width: 32px;
+    height: 32px;
+}
+.aside-contact-social-div {
+    display: flex;
+    gap: 10px;
+}
+.main-general-title {
+    background-color: darkgray;
+}
+.aside-general-title {
+    background-color: #0a3a7d;
+}
+a {
+    color: var(--primary-text-color);
+}
+a:visited {
+    color: var(--primary-text-color);
 
-@media screen and (max-width: 768px) {
+}
+#up-div-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+@media screen and (max-width: 767px) {
     header {
         padding: 0.5em 2em;
         margin: 0px;
@@ -45,11 +92,35 @@ header {
         font-size: 1.2rem;
         font-weight: 800;
     }
+    main {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    aside {
+        width: 90%;
+        padding-left: 20px;
+    }
+    #main-section-div{
+        width: 90%;
+        padding-left: 20px;
+    }
+    #info-job {
+        font-size: 1em;
+    }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     header {
         padding: 2.5em 4em;
         margin: 0px;
+    }
+    aside { 
+        width: 35%;
+        padding: 10px 20px;
+    }
+    #main-section-div {
+        width: 55%;
+        padding: 10px 20px;
     }
 }
 @media screen and (min-width: 1024px)  {
@@ -57,9 +128,19 @@ header {
         padding: 2.5rem 5%;
         margin: 0px;
     }
-    
+    aside { 
+        width: 45%;
+        padding: 10px 20px;
+    }
+    #main-section-div {
+        width: 45%;
+        padding: 10px 20px;
+    }
     #info-name {
         font-size: 3em;
         font-weight: 600;
+    }
+    hr {
+        width: 90%;
     }
 }
