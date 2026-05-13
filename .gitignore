@@ -3,3 +3,4 @@
 *.zip
 *.pdf
 node_modules/
+.env
